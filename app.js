@@ -21,6 +21,7 @@ menuIcon[0].addEventListener('click', function(e) {
 });
 
 if (x.matches) {
+	// location.reload();
 	window.onscroll = () => {
 		console.log('Here');
 		if (this.scrollY == 0) {
@@ -35,6 +36,27 @@ if (x.matches) {
 	};
 }
 
-console.log('Script loaded');
+function myFunction() {
+	location.reload();
+	// if (window.outerWidth >= 768) {
+	// 	console.log('big');
+	// 	window.onscroll = () => {
+	// 		console.log('Here');
+	// 		if (this.scrollY == 0) {
+	// 			navbar[0].style.backgroundColor = 'transparent';
+	// 		}
+	// 		if (this.scrollY >= 50) {
+	// 			navbar[0].style.backgroundColor = '#222';
+	// 		}
+	// 		else {
+	// 			navbar[0].style.backgroundColor = 'transparent';
+	// 		}
+	// 	};
+	// }
+	// else {
+	// 	console.log('small');
+	// 	navbar[0].style.backgroundColor = '#222';
+	// }
+}
 
-console.log(document.body.clientWidth, 'Client');
+console.log('Script loaded');
