@@ -95,15 +95,17 @@ a {
 
 /* TODO: navbar*/
 .navbar {
+	z-index: 5;
 	color: var(--mainWhite);
 	width: 100%;
 	padding: 1rem;
-	height: 22rem;
+	height: 4rem;
 	background-color: var(--mainBlack);
 	position: fixed;
-	transition: var(--mainTransition);
+	transition: all 0.2s linear;
 	top: 0;
 	left: 0;
+	margin: 0 auto;
 }
 
 .nav__logo h2 {
@@ -122,6 +124,11 @@ a {
 	margin-top: 1rem;
 	margin-right: 1rem;
 	cursor: pointer;
+}
+
+.nav__items{
+		display: none;
+		flex-direction: column;
 }
 
 .nav__link {
@@ -147,7 +154,7 @@ a {
 	margin-right: 0.7rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
 	.nav__link {
 		display: flex;
 		font-weight: bold;
@@ -163,22 +170,23 @@ a {
 	.nav__link:hover .nav__link__icon {
 		fill: var(--mainWhite);
 	}
-
+	
 	.nav__logo h2 {
 		margin-bottom: 0;
 	}
-
+	
 	.navbar {
 		display: flex;
+		padding: 1rem 4.5rem;
 		justify-content: space-between;
-		height: 4rem;
-		background-color: red;
+		height: 4rem !important;
 		align-items: center;
 	}
 
 	.nav__items {
-		display: flex;
+		display: flex !important;
 		margin-left: auto;
+		flex-direction: row;
 	}
 
 	.nav__menu__icon {
@@ -187,12 +195,6 @@ a {
 
 	.nav__items .divider {
 		display: none;
-	}
-}
-
-@media screen and (min-width: 992px) {
-	.navbar {
-		padding: 1rem 4.5rem;
 	}
 }
 
@@ -275,5 +277,60 @@ a {
 	background-image:var(--mainGradient);
 }
 
+@media screen and (min-width: 768px){
+	.hero__image__container{
+		width:80%;
+		height:80%;
+		margin:2rem auto;
+	}
+
+	.hero__image{
+		border-radius: 20px;
+	}
+
+	.hero{
+		background-color: var(--mainWhite);
+		width:90%;
+		margin: 5rem auto;
+		border-radius: 10px;
+		box-shadow: 4px 3px 14px 2px rgba(0,0,0,0.75);
+		position: relative;
+		z-index:2;
+	}
+
+	.hero__info{
+		width:80%;
+		margin: 0 auto
+	}
+
+	.hero__bg{
+		background: var(--mainGradient);
+		width:100vw;
+		top:0;
+		height: 70rem;
+		position: absolute;
+		z-index: -1;
+	}
+}
+
+@media screen and (min-width: 992px){
+	.hero{
+		display:flex;
+		margin-top: 8rem;
+	}
+
+	.hero__image__container{
+		flex:0 0 calc(50% - 2rem);
+		height: 90%;
+	}
+
+		.hero__bg{
+		height: 45rem;
+	}
+
+	.navbar{
+		background-color:transparent;
+	}
+}
 
 /* End Hero */
