@@ -36,3 +36,5 @@ if (x.matches) {
 }
 
 console.log('Script loaded');
+
+console.log(document.body.clientWidth, 'Client');
