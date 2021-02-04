@@ -38,6 +38,16 @@ body {
 
 /*  Global Styles */
 
+.section__title{
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: var(--mainSpacing);
+}
+
+.section__center{
+	margin:0 auto;
+}
+
 img {
 	width: 100%;
 	display: block;
@@ -125,6 +135,10 @@ a {
 	margin-top: 1rem;
 	margin-right: 1rem;
 	cursor: pointer;
+}
+
+#cross{
+	opacity:0;
 }
 
 .nav__items{
@@ -244,6 +258,7 @@ a {
 .hero__intro__text{
 	color: var(--darkGrey);
 	margin-bottom: 0;
+	font-size: 1.5rem;
 }
 
 .hero__title h1{
@@ -253,7 +268,8 @@ a {
 }
 
 .hero__title h2{
-	font-size: 1rem;
+	font-size: 1.5rem;
+	font-weight: bold;
 }
 
 .hero__list__item{
@@ -364,3 +380,105 @@ a {
 }
 
 /* End Hero */
+
+
+/* Start About */
+
+.about {
+	padding: 1.5rem;
+}
+
+.about__text{
+	text-align: justify;
+	font-size: 0.95rem;
+	margin: 2rem auto;
+}
+
+.about__card__icon{
+	width: 25px;
+	height: 25px;
+	fill:var(--secondaryColor);
+}
+
+.about__card__stats{
+	font-weight:bold;
+	font-size: 3rem;
+	margin-bottom: -0.5rem;
+}
+
+.about__card__title{
+	text-transform: uppercase;
+	color: var(--darkGrey);
+}
+
+.about__card{
+	widows: 90%;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	margin-bottom: 3rem;
+	padding: 1rem;
+}
+
+.skill{
+	margin-bottom: 1rem;
+}
+
+.skill__title{
+	font-size: 1rem;
+	text-transform: uppercase;
+	margin-bottom: 0.7rem;
+}
+
+.skill__progress__bar{
+	height: 15px;
+	border-radius: 7.5px;
+	background-color: var(--mainGrey);
+	position: relative;
+}
+
+.skill__progress__bar__completed{
+	position: absolute;
+	z-index: 2;
+		height: 15px;
+	border-radius: 7.5px;
+	top: 0;
+	left: 0;
+	width: 75%;
+	background-image: var(--mainGradient);
+}
+
+@media screen and (min-width:768px){
+	.about__cards{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.about__card{
+		text-align: center;
+		flex:0 0 calc(33.333%-2rem);
+	}
+
+	.section__center{
+		padding: 0 4rem;
+	}
+}
+
+@media screen and (min-width:992px){
+	.section__center{
+		display: flex;
+		align-items: center;
+	}
+	.right__half{
+		width: 45%;
+	}
+
+	.left__half{
+		width: 45%;
+		margin-right: 2rem;
+	}
+
+	.about__card{
+		margin:0 0.2rem;
+	}
+}
+
+/* End About */
