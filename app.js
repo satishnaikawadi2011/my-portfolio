@@ -1,11 +1,39 @@
 const navItems = document.querySelectorAll('.nav__items');
 const navbar = document.querySelectorAll('.navbar');
 const menuIcon = document.querySelectorAll('.nav__menu__icon');
+
 var x = window.matchMedia('(min-width: 992px)');
+
 const cross = document.getElementById('cross');
 const menu = document.getElementById('menu');
 const menuContainer = document.getElementById('menu__icon__container');
 
+const exp = document.getElementById('exp');
+const edu = document.getElementById('edu');
+const eduSec = document.getElementById('edu__sec');
+const expSec = document.getElementById('exp__sec');
+
+edu.addEventListener('click', function(e) {
+	e.preventDefault();
+	// console.log('clicked');
+	eduSec.classList.add('show');
+	expSec.classList.add('hide');
+	expSec.classList.remove('show');
+	eduSec.classList.remove('hide');
+	edu.classList.add('btn--white');
+	exp.classList.remove('btn--white');
+});
+
+exp.addEventListener('click', function(e) {
+	e.preventDefault();
+	// console.log('clicked');
+	eduSec.classList.add('hide');
+	expSec.classList.add('show');
+	expSec.classList.remove('hide');
+	eduSec.classList.remove('show');
+	edu.classList.remove('btn--white');
+	exp.classList.add('btn--white');
+});
 menuIcon[0].addEventListener('click', function(e) {
 	console.log('works');
 	if (x.matches) {

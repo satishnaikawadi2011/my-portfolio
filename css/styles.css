@@ -482,3 +482,76 @@ a {
 }
 
 /* End About */
+
+/* Start Edu. and Expe. */
+
+.edu__exp__sec{
+	background-image:var(--mainGradient);
+	transition: all 0.3s linear;
+	 margin: -1px auto 0 auto;
+}
+
+.education__section{
+	padding: 1rem 2rem;
+}
+
+.btn{
+	display: inline-block;
+	text-transform: capitalize;
+	background: var(--mainGradient);
+	padding:0.5rem 1rem;
+	border: 0.1px solid var(--primaryColor);
+	color: var(--mainBlack);
+	font-weight: bold;
+	transition: all 0.3s linear;
+	margin: 0 1rem;
+}
+
+.btn--white{
+	background: var(--mainWhite);
+}
+
+.buttons{
+	margin-left: 2rem;
+	margin-top: 0rem;
+	padding: 5rem 1rem 5rem 1rem;
+}
+
+.timeline{
+	text-transform: capitalize;
+	margin-bottom: 0;
+}
+
+.timeline__title{
+	text-transform: uppercase;
+	margin: 0.7rem 0;
+	font-size: 1.7rem;
+}
+
+.timeline__info{
+	text-transform: capitalize;
+}
+
+.education__item{
+	width: 14rem;
+	margin-bottom: 4rem;
+}
+
+#exp__sec h4{
+	text-align: center;
+	text-transform: capitalize;
+}
+
+#exp__sec{
+	padding-bottom: 2rem;
+}
+
+.hide{
+	display: none;
+}
+
+.show{
+	display: block;
+}
+
+/* End Edu. and Expe. */
