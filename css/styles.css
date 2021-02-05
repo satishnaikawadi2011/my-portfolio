@@ -14,7 +14,7 @@
 	--mainBlack: #222;
 	--mainTransition: all 0.5s linear;
 	--mainSpacing: 0.25rem;
-	--lightShadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.75);
+	--lightShadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
 	--darkShadow: 6px 7px 9px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -607,3 +607,45 @@ a {
 }
 
 /* End Edu. and Expe. */
+
+/* Services start */
+
+.section__services{
+	margin:2rem;
+}
+
+.service{
+	padding: 2rem;
+	text-align: justify;
+	transition: var(--mainTransition);
+}
+
+.service:hover{
+	box-shadow: var(--lightShadow);
+}
+
+.service:hover .service__icon{
+	fill:var(--secondaryColor);
+}
+.service__icon{
+	width: 50px;
+	height: 50px;
+	fill:var(--darkGrey);
+	margin-bottom: 1rem;
+	transition: var(--mainTransition);
+}
+
+.service__title h2{
+	font-size: 1.8rem;
+}
+
+@media screen and (min-width:992px){
+	.services__section{
+		display: flex;
+	}
+
+	.service{
+		margin:0 1rem;
+	}
+}
+/* Services end */
