@@ -12,6 +12,7 @@ const exp = document.getElementById('exp');
 const edu = document.getElementById('edu');
 const eduSec = document.getElementById('edu__sec');
 const expSec = document.getElementById('exp__sec');
+const expEduSec = document.getElementById('expEduSec');
 
 edu.addEventListener('click', function(e) {
 	e.preventDefault();
@@ -22,6 +23,7 @@ edu.addEventListener('click', function(e) {
 	eduSec.classList.remove('hide');
 	edu.classList.add('btn--white');
 	exp.classList.remove('btn--white');
+	expEduSec.classList.remove('remove__line');
 });
 
 exp.addEventListener('click', function(e) {
@@ -33,6 +35,7 @@ exp.addEventListener('click', function(e) {
 	eduSec.classList.remove('show');
 	edu.classList.remove('btn--white');
 	exp.classList.add('btn--white');
+	expEduSec.classList.add('remove__line');
 });
 menuIcon[0].addEventListener('click', function(e) {
 	console.log('works');
