@@ -1,0 +1,7 @@
+.section__center{
+    padding: 2rem;
+}
+
+.hero{
+    box-shadow: var(--lightShadow);
+}

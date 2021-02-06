@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body onresize="myFunction()" id="page__container">
+    <div class="page__content__wrong">
+        <nav class="navbar">
+            <span class="nav__logo">
+                <a href="/">
+                    <h2>Satish</h2>
+                </a>
+            </span>
+            <div class="nav__items">
+                <a href="/" class="nav__link"> <svg class="nav__link__icon">
+                        <use xlink:href="images/sprite.svg#icon-home"></use>
+                    </svg>Home</a>
+                <div class="divider"></div>
+                <a href="about.html" class="nav__link"><svg class="nav__link__icon">
+                        <use xlink:href="images/sprite.svg#icon-info"></use>
+                    </svg>About</a>
+                <div class="divider"></div>
+                <a href="projects.html" class="nav__link"><svg class="nav__link__icon">
+                        <use xlink:href="images/sprite.svg#icon-files-empty"></use>
+                    </svg>Projects</a>
+                <div class="divider"></div>
+                <a href="contact.html" class="nav__link"><svg class="nav__link__icon">
+                        <use xlink:href="images/sprite.svg#icon-phone"></use>
+                    </svg>Contact</a>
+            </div>
+            <div id="menu__icon__container">
+                <svg class="nav__menu__icon" id="menu">
+                    <use xlink:href="images/sprite.svg#icon-menu"></use>
+                </svg>
+            </div>
+        </nav>
+    </div>
+
+
+    <main class="page__container">
+        <div class="page__title">
+            <h1>Contact me</h1>
+        </div>
+        <div class="page__content">
+            <ul class="hero__list">
+                <li class="hero__list__item">
+                    <svg class="hero__list__item__icon">
+                        <use xlink:href="images/sprite.svg#icon-envelop"></use>
+                    </svg>
+                    <div class="list__text">
+                        <span>satishnaikawadi2001@gmail.com</span>
+                        <p>Send us your query or suggestion anytime!</p>
+                    </div>
+                    <!-- <p>Send me your query or suggestion anytime!</p> -->
+                </li>
+                <li class="hero__list__item">
+                    <svg class="hero__list__item__icon">
+                        <use xlink:href="images/sprite.svg#icon-phone"></use>
+                    </svg>
+                    <div class="list__text">
+                        <span>8975179022 , 9324636618</span>
+                        <p>Mon to Fri 9am to 6 pm
+                        </p>
+                    </div>
+                </li>
+                <li class="hero__list__item">
+                    <svg class="hero__list__item__icon">
+                        <use xlink:href="images/sprite.svg#icon-home"></use>
+                    </svg>
+                    <div class="list__text">
+                        <span>Charan , maharashtra ,india</span>
+                        <p>Near Ganesh Mandir</p>
+                    </div>
+                </li>
+            </ul>
+            <form action="#" class="form">
+                <div class="first__half__form">
+                    <div class="form__group">
+                        <label for="name">Name</label>
+                        <input required type="text" class="form__control" placeholder="Enter your name" name="name">
+                    </div>
+                    <div class="form__group">
+                        <label for="email">Email</label>
+                        <input required type="email" class="form__control" placeholder="Enter your email" name="email">
+                    </div>
+                    <div class="form__group">
+                        <label for="address">Address</label>
+                        <input required type="text" class="form__control" placeholder="Enter your address"
+                            name="address">
+                    </div>
+                </div>
+                <div class="second__half__form">
+                    <div class="form__group">
+                        <label for="subject">Subject</label>
+                        <input required type="text" class="form__control" placeholder="Enter subject" name="subject">
+                    </div>
+                    <div class="form__group">
+                        <label for="message">Message</label>
+                        <textarea required rows="5" class="form__control" placeholder="Enter message"
+                            name="message"></textarea>
+                    </div>
+                </div>
+                <button class="mainBtn" type='submit'>send message</button>
+            </form>
+        </div>
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footer__center">
+            <section class="footer__about">
+                <h4>about me</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, doloribus?</p>
+                <p>Copyright &copy; 2021 All rights reserved</p>
+            </section>
+            <section class="social">
+                <h4>follow me</h4>
+                <p>Let us be social</p>
+                <div class="footer__social__icons">
+                    <svg class="footer__social__icon">
+                        <use xlink:href="images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                    <svg class="footer__social__icon">
+                        <use xlink:href="images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                    <svg class="footer__social__icon">
+                        <use xlink:href="images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                    <svg class="footer__social__icon">
+                        <use xlink:href="images/sprite.svg#icon-linkedin2"></use>
+                    </svg>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

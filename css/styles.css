@@ -142,6 +142,7 @@ a {
 	font-size: 1.7rem;
 	cursor: pointer;
 	display: inline-block;
+	color: var(--mainWhite);
 }
 
 .nav__menu__icon {
@@ -349,7 +350,7 @@ a {
 		width:90%;
 		margin: 5rem auto;
 		border-radius: 10px;
-		box-shadow: 4px 3px 14px 2px rgba(0,0,0,0.75);
+		box-shadow: var(--lightShadow);
 		position: relative;
 		z-index:2;
 	}
@@ -882,5 +883,14 @@ footer h4{
 		width: calc(50% - 2rem);
 	}
 }
-
 /* Footer end */
+
+
+
+/* Page Global Styles */
+
+.page__title{
+	text-align: center;
+	margin:7rem auto 1rem auto;
+	text-transform: uppercase;
+}

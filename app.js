@@ -14,29 +14,6 @@ const eduSec = document.getElementById('edu__sec');
 const expSec = document.getElementById('exp__sec');
 const expEduSec = document.getElementById('expEduSec');
 
-edu.addEventListener('click', function(e) {
-	e.preventDefault();
-	// console.log('clicked');
-	eduSec.classList.add('show');
-	expSec.classList.add('hide');
-	expSec.classList.remove('show');
-	eduSec.classList.remove('hide');
-	edu.classList.add('btn--white');
-	exp.classList.remove('btn--white');
-	expEduSec.classList.remove('remove__line');
-});
-
-exp.addEventListener('click', function(e) {
-	e.preventDefault();
-	// console.log('clicked');
-	eduSec.classList.add('hide');
-	expSec.classList.add('show');
-	expSec.classList.remove('hide');
-	eduSec.classList.remove('show');
-	edu.classList.remove('btn--white');
-	exp.classList.add('btn--white');
-	expEduSec.classList.add('remove__line');
-});
 menuIcon[0].addEventListener('click', function(e) {
 	console.log('works');
 	if (x.matches) {
@@ -55,20 +32,49 @@ menuIcon[0].addEventListener('click', function(e) {
 	}
 });
 
-if (x.matches) {
-	// location.reload();
-	window.onscroll = () => {
-		console.log('Here');
-		if (this.scrollY == 0) {
-			navbar[0].style.backgroundColor = 'transparent';
-		}
-		if (this.scrollY >= 50) {
-			navbar[0].style.backgroundColor = '#222';
-		}
-		else {
-			navbar[0].style.backgroundColor = 'transparent';
-		}
-	};
+if (location.pathname == '/' || location.pathname == '/index.html') {
+	edu.addEventListener('click', function(e) {
+		e.preventDefault();
+		// console.log('clicked');
+		eduSec.classList.add('show');
+		expSec.classList.add('hide');
+		expSec.classList.remove('show');
+		eduSec.classList.remove('hide');
+		edu.classList.add('btn--white');
+		exp.classList.remove('btn--white');
+		expEduSec.classList.remove('remove__line');
+	});
+
+	exp.addEventListener('click', function(e) {
+		e.preventDefault();
+		// console.log('clicked');
+		eduSec.classList.add('hide');
+		expSec.classList.add('show');
+		expSec.classList.remove('hide');
+		eduSec.classList.remove('show');
+		edu.classList.remove('btn--white');
+		exp.classList.add('btn--white');
+		expEduSec.classList.add('remove__line');
+	});
+
+	if (x.matches) {
+		// location.reload();
+		window.onscroll = () => {
+			console.log('Here');
+			if (this.scrollY == 0) {
+				navbar[0].style.backgroundColor = 'transparent';
+			}
+			if (this.scrollY >= 50) {
+				navbar[0].style.backgroundColor = '#222';
+			}
+			else {
+				navbar[0].style.backgroundColor = 'transparent';
+			}
+		};
+	}
+}
+else {
+	navbar[0].style.backgroundColor = '#222';
 }
 
 function myFunction() {
